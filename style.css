@@ -1,0 +1,113 @@
+:root{
+    --fond: #272635;
+    --fondJoueur:;
+    --fondCpu:;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.fondFormulaire{
+    position: absolute;
+    z-index: -1;
+    background-color: var(--fond);
+    width: 100%;
+    height: 100%;
+}
+.boxFormulaire{
+    width: 280px;
+    border-radius: 20px;
+    background-color: #F0BCD4;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.none{
+    display: none;
+}
+
+.formulaire{
+    padding: 20px;
+}
+
+#nom{
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.radio{
+    display: flex;
+    justify-content: space-around;
+}
+
+#choix{
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    appearance: none;
+}
+
+.jouer{
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    width: 100%;
+}
+
+.boxGame{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.joueur{
+    height: 100%;
+    width: 50%;
+    background-color: var(--fondJoueur);
+    position: absolute;
+}
+
+.cpu{
+    height: 100%;
+    width: 50%;
+    background-color: var(--fondCpu);
+    position: absolute;
+    right: 0;
+}
+
+.nomJoueur{
+
+}
+
+.nomCpu{
+
+}
+
+.resultat{
+
+}
+
+.rejouer{
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    border: 0;
+    width: 10%;
+}
