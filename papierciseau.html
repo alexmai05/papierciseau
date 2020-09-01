@@ -5,9 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papierciseau</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="javascript" href="javascript.js">
 </head>
 <body>
-    
+    <div class="fondFormulaire"></div>
+    <div class= "boxFormulaire">
+        <div class= 'formulaire'>
+            <label for="nom">Nom</label> <br>
+            <input type="text" id="nom" name="nom">
+            <br>
+            <br>
+            <label for="peau">Peau</label> <br>
+            <div class="radio">
+                <input type="radio" name="Peau" id="choixJaune"> 👋 
+                <input type="radio" name="Peau" id="choixBlanc">👋🏻
+                <input type="radio" name="Peau" id="choixBalzane">👋🏽
+                <input type="radio" name="Peau" id="choixNoir"> 👋🏿<br>
+                <br>
+            </div>
+            <label for="choix">Choix</label> <br>
+            <select name="Action" id="choix">
+                <option value="roche">🥔</option>
+                <option value="papier">📄</option>
+                <option value="ciseau">✂️</option>
+            </select> 
+            <br>
+            <br>
+            <button class="jouer">Jouer</button>
+        </div>
+    </div>
+    <div class="boxGame">
+        <div class="joueur">
+            <div class="nomJoueur">Joueur</div>
+            <div class="choixJoueur"></div>
+        </div>
+        <div class="cpu">
+            <div class="nomCpu">CPU</div>
+            <div class="choixCpu"></div>
+        </div>
+        <div class="resultat">Victoire</div>
+        <button class="rejouer">Rejouer</button>
+    </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
