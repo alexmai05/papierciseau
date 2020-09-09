@@ -1,7 +1,7 @@
 :root{
     --fond: #272635;
-    --fondJoueur:;
-    --fondCpu:;
+    --fondJoueur:pink;
+    --fondCpu:yellow;
 }
 
 *{
@@ -39,7 +39,7 @@ body{
     padding: 20px;
 }
 
-#nom{
+.nomTexte{
     height: 40px;
     border-radius: 20px;
     border: 0;
@@ -52,7 +52,7 @@ body{
     justify-content: space-around;
 }
 
-#choix{
+.armes{
     height: 40px;
     border-radius: 20px;
     border: 0;
@@ -93,15 +93,50 @@ body{
 }
 
 .nomJoueur{
-
+    position: absolute;
+    font-size: 50px;
+    top: 10%;
+    left: 50%;
+    color: white;
 }
 
 .nomCpu{
-
+    position: absolute;
+    font-size: 50px;
+    top: 10%;
+    left: 50%;
+    color: white;
 }
 
-.resultat{
+.emoji{
+    font-size: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
 
+.emojiJoueur{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.emojiCpu{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+
+.resultat{
+    position: absolute;
+    font-size: 50px;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
 }
 
 .rejouer{
@@ -110,4 +145,9 @@ body{
     background-color: white;
     border: 0;
     width: 10%;
+    position: absolute;
+    font-size: 20px;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
