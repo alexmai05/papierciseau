@@ -11,22 +11,22 @@
     <div class= "boxFormulaire">
         <div class= 'formulaire'>
             <label for="nom">Nom</label> <br>
-            <input type="text" id="nom" name="nom">
+            <input type="text" class="nomTexte">
             <br>
             <br>
             <label for="peau">Peau</label> <br>
             <div class="radio">
-                <input type="radio" name="Peau" id="choixJaune"> 👋 
-                <input type="radio" name="Peau" id="choixBlanc">👋🏻
-                <input type="radio" name="Peau" id="choixBalzane">👋🏽
-                <input type="radio" name="Peau" id="choixNoir"> 👋🏿<br>
+                <input type="radio" name="choixPeau" class="choixJaune" checked value="0"> 👋 
+                <input type="radio" name="choixPeau" class="choixBlanc" value="1">👋🏻
+                <input type="radio" name="choixPeau" class="choixBalzane" value="2">👋🏽
+                <input type="radio" name="choixPeau" class="choixNoir" value="3"> 👋🏿<br>
                 <br>
             </div>
-            <label for="choix">Choix</label> <br>
-            <select name="Action" id="choix">
-                <option value="roche">🥔</option>
-                <option value="papier">📄</option>
-                <option value="ciseau">✂️</option>
+            <label class="choixArme">Choix</label> <br>
+            <select name="armes" class="armes">
+                <option value="0">🥔</option>
+                <option value="1">📄</option>
+                <option value="2">✂️</option>
             </select> 
             <br>
             <br>
@@ -35,12 +35,13 @@
     </div>
     <div class="boxGame">
         <div class="joueur">
-            <div class="nomJoueur">Joueur</div>
-            <div class="choixJoueur"></div>
+            <div class="nomJoueur" ></div>
+            <div class="emoji emojiJoueur">✊</div>
+
         </div>
         <div class="cpu">
             <div class="nomCpu">CPU</div>
-            <div class="choixCpu"></div>
+            <div class="emoji emojiCpu">✊</div>
         </div>
         <div class="resultat">Victoire</div>
         <button class="rejouer">Rejouer</button>
