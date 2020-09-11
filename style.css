@@ -16,7 +16,6 @@ body{
 
 .fondFormulaire{
     position: absolute;
-    z-index: -1;
     background-color: var(--fond);
     width: 100%;
     height: 100%;
@@ -74,7 +73,6 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -2;
 }
 
 .joueur{
@@ -133,7 +131,7 @@ body{
 .resultat{
     position: absolute;
     font-size: 50px;
-    top: 10%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
