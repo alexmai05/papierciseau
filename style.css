@@ -94,7 +94,7 @@ body{
     position: absolute;
     font-size: 50px;
     top: 10%;
-    left: 50%;
+    left: 35%;
     color: white;
 }
 
@@ -102,7 +102,7 @@ body{
     position: absolute;
     font-size: 50px;
     top: 10%;
-    left: 50%;
+    left: 40%;
     color: white;
 }
 
@@ -117,21 +117,21 @@ body{
     margin: 0;
     position: absolute;
     top: 30%;
-    left: 20%;
+    left: 38%;
 }
 
 .emojiCpu{
     margin: 0;
     position: absolute;
     top: 30%;
-    right: 20%;
+    right: 42%;
 }
 
 
 .resultat{
     position: absolute;
     font-size: 50px;
-    bottom: 20%;
+    bottom: 12%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -142,10 +142,10 @@ body{
     border-radius: 20px;
     background-color: white;
     border: 0;
-    width: 10%;
+    width: 200px;
     position: absolute;
     font-size: 20px;
-    bottom: 10%;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 }
