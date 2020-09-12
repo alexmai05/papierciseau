@@ -2,16 +2,33 @@ const jouer = document.querySelector(".jouer");
 const rejouer = document.querySelector(".rejouer");
 
 jouer.addEventListener("click", () => {
-    document.querySelector(".boxFormulaire").classList.add("none");
-    document.querySelector(".fondFormulaire").classList.add("none");
-    document.querySelector(".formulaire").classList.add("none");
+
     const game = new Game();
+
+    const tl = gsap.timeline({
+        defaults: {
+            ease: "linear"
+        }
+    })
+    .to(".boxFormulaire", {ease: "back.in(1)", y: "100vh", duration: 1})
+    .to(".fondFormulaire", {
+        opacity: 0,
+        onComplete: () => document.querySelector(".fondFormulaire").classList.add("none")
+    })
 })
 
 rejouer.addEventListener("click", () => {
-    document.querySelector(".boxFormulaire").classList.remove("none");
-    document.querySelector(".fondFormulaire").classList.remove("none");
-    document.querySelector(".formulaire").classList.remove("none");
+
+    const tl = gsap.timeline({
+        defaults: {
+            ease: "linear"
+        }
+    })
+    .to(".fondFormulaire", {
+        onStart: () => document.querySelector(".fondFormulaire").classList.remove("none"),
+        opacity: 1
+    })
+    .to(".boxFormulaire", {ease: "back.out(1)", y: "0", duration: 1})
 })
 
 class Game{
